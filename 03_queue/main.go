@@ -63,11 +63,11 @@ func (n *node) pop() {
 	}
 }
 
-func (n *node) back() byte {
+func (n *node) front() byte {
 	return n.value
 }
 
-func (n *node) front() byte {
+func (n *node) back() byte {
 	current := n
 
 	for current.next != nil {
